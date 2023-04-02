@@ -7,8 +7,15 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["SourceSansPro", ...defaultTheme.fontFamily.sans],
-		display: ["Comfortaa", "SourceSansPro"],
+        display: ["Comfortaa", "SourceSansPro", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        luhad: {
+          red: '#ff3232',
+          purple: '#9f018b',
+          blue: '#00ccff',
+        },
+      }
     },
   },
   plugins: [],
