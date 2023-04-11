@@ -1,0 +1,8 @@
+services:
+  luhad-website:
+    build: .
+    networks:
+      - docker-proxy_proxy-net
+networks:
+  docker-proxy_proxy-net:
+    external: true
