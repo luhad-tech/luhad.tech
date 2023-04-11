@@ -2,11 +2,21 @@
 export interface Props {
   text: string;
   href: string;
+  disabled?: boolean;
 }
-const { href, text } = Astro.props;
+const { href, text, disabled } = Astro.props;
 ---
 
-<a class="text-white font-display font-bold text-2xl transition duration-300 group p-2" href={href}>
-  {text}
-  <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white"/>
-</a>
+{
+  disabled ? (
+    <p class="font-display font-bold text-2xl p-2 text-slate-300">{text}</p>
+  ) : (
+    <a
+      class="text-white font-display font-bold text-2xl p-2 transition duration-300 group"
+      href={href}
+    >
+      {text}
+      <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white" />
+    </a>
+  )
+}
