@@ -1,15 +1,62 @@
 ---
-import NavButton from "./NavButton.astro";
 ---
 
-<div class="">
-  <navbar class="flex flex-row justify-around items-center">
-    <NavButton href="/" text="Home" />
-    <NavButton href="/" text="About" disabled/>
-    <a href="/">
-      <img src="/luhad square.jpg" alt="logo" class="h-20" />
+<div class="navbar-container">
+  <!-- <NavButton href="/" text="Home" /> -->
+  <!-- <NavButton href="/" text="About" disabled/> -->
+  <a href="/" class="navbar-logo">
+    <img src="/branding/Luhad Logo.svg" alt="logo" />
+  </a>
+
+  <!-- <div class="navbar-buttons">
+    <a href="/" class="navbar-logo">
+      <img src="/luhad square.jpg" alt="logo" />
     </a>
-    <NavButton href="/" text="Products" disabled/>
-    <NavButton href="/" text="Solutions" disabled/>
-  </navbar>
+
+    <a href="/" class="navbar-logo">
+      <img src="/luhad square.jpg" alt="logo" />
+    </a>
+    <a href="/" class="navbar-logo">
+      <img src="/luhad square.jpg" alt="logo" />
+    </a>
+  </div> -->
+  <!-- <NavButton href="/" text="Products" disabled/> -->
+  <!-- <NavButton href="/" text="Solutions" disabled/> -->
 </div>
+
+<style>
+  .navbar-container {
+    padding: 0.25em;
+
+    height: 6vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-logo {
+    height: 4vh;
+    /* width: 50vw; */
+  }
+
+  .navbar-logo > img {
+    height: inherit;
+    width: inherit;
+  }
+
+  .navbar-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 0.5em;
+  }
+
+  .navbar-buttons > a {
+    padding: 0 0.25em 0 0.25em;
+  }
+</style>

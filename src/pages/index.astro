@@ -1,19 +1,72 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Hero.astro";
 import Navbar from "../components/Navbar.astro";
+import Card from "../components/Card.astro";
+import Button from "../components/Button.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Luhad Technologies | Home">
+<Layout title="Luhad Technologies">
   <main>
     <Navbar />
-    <Hero />
-    <section class="">
-      <h1 class="">Coming Soon</h1>
-      <h3 class="">This page is still under construction.</h3>
-      <h3 class="">check back soon</h3>
-    </section>
-    <Footer/>
+    <div class="main-container">
+      <Card class="hero">
+        <img src="/branding/tagline.svg" />
+      </Card>
+      <Card>
+        <h1>Digital Business Card</h1>
+        <h2>The future of contact sharing<br />Starting at $20</h2>
+        <Button color="#703EAE" href="mailto:sales@luhad.tech">
+          Contact Sales
+        </Button>
+        <img
+          style="width: 50%; margin-top: 1.2rem;"
+          src="/branding/nfc-infographic.svg"
+        />
+      </Card>
+      <Card>
+        <h1>Website Development</h1>
+        <h2>Custom-tailored websites for your business</h2>
+        <Button color="#703EAE" href="mailto:sales@luhad.tech">
+          Contact Sales
+        </Button>
+        <!-- <img style="width: 50%;" src="/branding/web-host-graphic.svg" /> -->
+      </Card>
+      <Card>
+        <h1>Want Updates?</h1>
+        <h2>
+          Join our mailing list and get important updates on our offerings
+        </h2>
+        <Button color="#703EAE" href="https://forms.gle/QatN29DHpzACuS8r8">
+          Sign Up
+        </Button>
+      </Card>
+    </div>
+    <Footer />
   </main>
 </Layout>
+
+<style>
+  main {
+    margin: 0 5vw 0 5vw;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+      110deg,
+      #ff3232 0%,
+      #9f018b 38%,
+      #00ccff 100%
+    );
+  }
+
+  .hero > img {
+    width: inherit;
+  }
+</style>

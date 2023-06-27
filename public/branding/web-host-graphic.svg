@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d3204c;
+      }
+
+      .cls-2 {
+        letter-spacing: -.16em;
+      }
+
+      .cls-3 {
+        fill: #404140;
+        stroke: #fff;
+      }
+
+      .cls-4 {
+        fill: #fff68d;
+      }
+
+      .cls-5 {
+        fill: #56be93;
+      }
+
+      .cls-6 {
+        fill: #525252;
+        stroke-width: 1.6px;
+      }
+
+      .cls-6, .cls-7 {
+        stroke: #000;
+        stroke-linecap: round;
+      }
+
+      .cls-7 {
+        fill: #9ea5a9;
+        stroke-width: 1.6px;
+      }
+
+      .cls-8 {
+        fill: #fff;
+        font-family: Comfortaa-Bold, Comfortaa;
+        font-size: 24px;
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+      }
+
+      .cls-9 {
+        fill: none;
+        stroke: #231f20;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-6" x="146.06" y="305.04" width="219" height="128" rx="5.08" ry="5.08"/>
+    <circle class="cls-5" cx="165.56" cy="411.54" r="12.5"/>
+    <circle class="cls-4" cx="194.56" cy="411.54" r="12.5"/>
+    <circle class="cls-1" cx="224.56" cy="411.54" r="12.5"/>
+    <rect class="cls-3" x="156.06" y="315.04" width="197" height="25.5" rx="12" ry="12"/>
+    <rect class="cls-3" x="156.56" y="354.53" width="197" height="25.5" rx="12" ry="12"/>
+  </g>
+  <g>
+    <g>
+      <rect class="cls-6" x="145.17" y="77.04" width="219" height="128" rx="5.08" ry="5.08"/>
+      <g>
+        <path class="cls-7" d="m148.94,76.96h211c2.21,0,4,1.79,4,4v10.59h-219v-10.59c0-2.21,1.79-4,4-4Z"/>
+        <circle class="cls-5" cx="152.14" cy="84.54" r="2.98"/>
+        <circle class="cls-4" cx="159.05" cy="84.54" r="2.98"/>
+        <circle class="cls-1" cx="166.19" cy="84.54" r="2.98"/>
+      </g>
+    </g>
+    <text class="cls-8" transform="translate(219.85 152.68)"><tspan x="0" y="0">WW</tspan><tspan class="cls-2" x="45.02" y="0">W</tspan><tspan x="63.7" y="0">.</tspan></text>
+  </g>
+  <line class="cls-9" x1="255.56" y1="205.04" x2="255.56" y2="305.04"/>
+</svg>
